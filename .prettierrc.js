@@ -1,0 +1,14 @@
+module.exports = {
+  printWidth: 120,
+  tabWidth: 2,
+  trailingComma: 'all',
+  bracketSpacing: true,
+  jsxBracketSameLine: true,
+  arrowParens: 'always',
+  parser: 'typescript',
+  semi: false,
+  singleQuote: true,
+  jsxSingleQuote: false,
+  endOfLine: "lf",
+  parser: "babel"
+}
