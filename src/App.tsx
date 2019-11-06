@@ -1,10 +1,13 @@
 import React from 'react'
-// import logo from 'assets/img/logo.svg'
+import logo from './assets/img/logo-sm.png'
+import { test } from '@/assets/js/public'
+const a = test()
 const App: React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
+        <img src={logo} className="App-logo" style={{ width: '60px' }} alt="logo" />
+        {a}
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>

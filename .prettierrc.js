@@ -3,12 +3,13 @@ module.exports = {
   tabWidth: 2,
   trailingComma: 'all',
   bracketSpacing: true,
-  jsxBracketSameLine: true,
+  jsxBracketSameLine: false,
   arrowParens: 'always',
   parser: 'typescript',
   semi: false,
   singleQuote: true,
   jsxSingleQuote: false,
   endOfLine: "lf",
-  parser: "babel"
+  parser: "babel",
+  proseWrap: "always"
 }

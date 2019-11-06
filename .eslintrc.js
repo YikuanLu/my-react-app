@@ -11,11 +11,11 @@ module.exports = {
     'plugin:@typescript-eslint/recommended', // Uses the recommended rules from the @typescript-eslint/eslint-plugin
     'plugin:react/recommended',
     'plugin:jsx-control-statements/recommended',
-    'prettier',
+    // 'prettier',
     'prettier/@typescript-eslint', // Uses eslint-config-prettier to disable ESLint rules from @typescript-eslint/eslint-plugin that would conflict with prettier
     'plugin:prettier/recommended', // Enables eslint-plugin-prettier and displays prettier errors as ESLint errors. Make sure this is always the last configuration in the extends array.
-    'prettier/react',
-    'prettier/babel',
+    // 'prettier/react',
+    // 'prettier/babel',
   ],
   globals: {
     // 这里填入你的项目需要的全局变量
@@ -40,18 +40,9 @@ module.exports = {
     '@typescript-eslint',
     'react',
     'jsx-control-statements',
-    'prettier'
+    // 'prettier'
   ],
   rules: {
-    'prettier/prettier': [
-      'error',
-      {
-        semi: false,
-        singleQuote: true,
-        printWidth: 160,
-        endOfLine: 'auto'
-      }
-    ],
     'no-console': ['warn', { allow: ['warn', 'error'] }],
     'prefer-const': ['error', { destructuring: 'all', ignoreReadBeforeAssign: true }],
     '@typescript-eslint/indent': ['error', 2, { VariableDeclarator: 2, SwitchCase: 1 }],

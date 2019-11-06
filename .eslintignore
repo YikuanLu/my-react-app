@@ -1,5 +1,8 @@
 src/registerServiceWorker.js
 src/serviceWorker.ts
-src/**/__tests__/**
+src/images.d.ts
+src/**/test/**
 config-overrides.js
 /build
+/config
+tsconfig.json
