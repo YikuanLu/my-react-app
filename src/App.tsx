@@ -1,13 +1,13 @@
 import React from 'react'
-import logo from './assets/img/logo-sm.png'
-import { test } from '@/assets/js/public'
-const a = test()
+import logo from '@/assets/img/logo-sm.png'
+
+import Home from '@/pages/home'
+
 const App: React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" style={{ width: '60px' }} alt="logo" />
-        {a}
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
@@ -15,6 +15,7 @@ const App: React.FC = () => {
           Learn React
         </a>
       </header>
+      <Home myName="Bob" age={20} />
     </div>
   )
 }

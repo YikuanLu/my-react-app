@@ -1,4 +1,5 @@
 // webpack.config.js
+const path = require('path');
 module.exports = {
   module: {
     rules: [
@@ -12,5 +13,10 @@ module.exports = {
         }
       }
     ]
+  },
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, '../src'),
+    }
   }
 }
