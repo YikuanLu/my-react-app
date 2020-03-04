@@ -11,5 +11,6 @@ module.exports = {
   jsxSingleQuote: false,
   endOfLine: "lf",
   parser: "babel",
-  proseWrap: "always"
+  proseWrap: "always",
+  end_of_line: 'lf'
 }

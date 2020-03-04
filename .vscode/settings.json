@@ -7,7 +7,6 @@
   "window.zoomLevel": 0,
   "editor.formatOnSave": true,
   "eslint.enable": true,
-  "prettier.singleQuote": false,
   "eslint.options": {
     "extensions": [
       ".js",
