@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from '@/assets/img/logo-sm.png'
 
-import Home from '@/pages/home'
+import RouterView from '@/route'
 
 const App: React.FC = () => {
   return (
@@ -15,7 +15,7 @@ const App: React.FC = () => {
           Learn React
         </a>
       </header>
-      <Home myName="Bob" age={20} />
+      <RouterView />
     </div>
   )
 }
