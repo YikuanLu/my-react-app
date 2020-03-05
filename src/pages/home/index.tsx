@@ -1,15 +1,14 @@
 import React from 'react'
-
+import ShowName from '@/components/public/showName'
 export interface Props {
   myName: string;
   age?: number;
 }
 
-const Home: React.FC<Props> = ({ myName, age = 3 }: Props) => {
+const Home: React.FC = () => {
   return (
     <div className="home">
-      <div>名字：{myName}</div>
-      <div>岁数：{age}</div>
+      <ShowName myName="Bob" />
     </div>
   )
 }
