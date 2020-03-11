@@ -1,5 +1,5 @@
 import React from 'react'
-import ShowName from '@/components/public/showName'
+import ShowName from '@/components/public/showName/showName'
 export interface Props {
   myName: string;
   age?: number;
@@ -8,7 +8,7 @@ export interface Props {
 const Home: React.FC = () => {
   return (
     <div className="home">
-      <ShowName myName="Bob" />
+      <ShowName age={20} />
     </div>
   )
 }
