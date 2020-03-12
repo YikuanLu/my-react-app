@@ -7,15 +7,15 @@ const Home = lazy(() => import('@/pages/home'))
 
 const RouterView: React.FC = () => {
   return (
-    <Suspense fallback={<Spin className="global-spin" />}>
-      <Router>
-        <Switch>
-          <Route exact path="/">
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          <Suspense fallback={<Spin className="global-spin" />}>
             <Home />
-          </Route>
-        </Switch>
-      </Router>
-    </Suspense>
+          </Suspense>
+        </Route>
+      </Switch>
+    </Router>
   )
 }
 

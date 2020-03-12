@@ -1,5 +1,5 @@
 import React from 'react'
-import ShowName from '@/components/public/showName/showName'
+import ShowName from '@/components/public/showName'
 export interface Props {
   myName: string;
   age?: number;

@@ -9,18 +9,16 @@ const initInfor: UserModel = {
   Authority: [],
 }
 
-const userReducer = (state = initInfor, action: UserAction): UserModel => {
+const userReducer = (state: UserModel = initInfor, action: UserAction): UserModel => {
   if (action.type === RESET_USER_INFOR) {
     return {
       ...initInfor,
     }
   }
   if (action.type === SET_USER_INFOR && action.userInfor) {
+    const userInfor: UserModel = action.userInfor
     return {
-      token: action.userInfor.token,
-      userName: action.userInfor.userName,
-      avatar: action.userInfor.avatar,
-      Authority: [],
+      ...userInfor,
     }
   }
   return state
