@@ -43,6 +43,7 @@ module.exports = {
     // 'prettier'
   ],
   rules: {
+    'react/display-name': 0,
     'no-console': ['warn', { allow: ['warn', 'error'] }],
     'prefer-const': ['error', { destructuring: 'all', ignoreReadBeforeAssign: true }],
     '@typescript-eslint/indent': ['error', 2, { VariableDeclarator: 2, SwitchCase: 1 }],

@@ -1,7 +1,11 @@
 import React from 'react'
 
-const BasicLayout: React.FC = () => {
-  return <div className="basicLayout">BasicLayout</div>
+interface Props {
+  children?: React.ReactNode;
+}
+
+const BasicLayout: React.FC<Props> = ({ children }: Props) => {
+  return <div className="basicLayout">{children ? children : null}</div>
 }
 
 export default BasicLayout
