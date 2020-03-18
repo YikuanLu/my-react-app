@@ -1,8 +1,8 @@
 import { combineReducers, createStore } from 'redux'
-import userReducer from '@/store/reducers/user'
-
+import { composeWithDevTools } from 'redux-devtools-extension'
 import { persistStore, persistReducer } from 'redux-persist'
 import storage from 'redux-persist/lib/storage'
+import userReducer from '@/store/reducers/user'
 
 const persistConfig = {
   key: 'root',
@@ -15,5 +15,8 @@ const reducers = combineReducers({
 
 const persistedReducer = persistReducer(persistConfig, reducers)
 
-export const store = createStore(persistedReducer)
+export const store = createStore(
+  persistedReducer,
+  composeWithDevTools()
+)
 export const persistor = persistStore(store)

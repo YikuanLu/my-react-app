@@ -4,6 +4,7 @@ import { Provider } from 'react-redux'
 import { PersistGate } from 'redux-persist/integration/react'
 import { store, persistor } from '@/store/index'
 
+import '@/assets/sass/public.sass'
 import App from './App'
 
 ReactDOM.render(

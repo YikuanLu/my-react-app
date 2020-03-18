@@ -1,7 +1,7 @@
 module.exports = {
-  printWidth: 120,
+  printWidth: 80,
   tabWidth: 2,
-  trailingComma: 'all',
+  trailingComma: 'none', //尾随逗号
   bracketSpacing: true,
   jsxBracketSameLine: false,
   arrowParens: 'always',
@@ -9,8 +9,7 @@ module.exports = {
   semi: false,
   singleQuote: true,
   jsxSingleQuote: false,
-  endOfLine: "lf",
-  parser: "babel",
-  proseWrap: "always",
-  end_of_line: 'lf'
+  endOfLine: 'lf',
+  parser: 'babel',
+  proseWrap: 'always'
 }

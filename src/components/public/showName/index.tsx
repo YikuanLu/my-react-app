@@ -10,9 +10,7 @@ export interface MapDispatchToProps {
   resetUserInfor: () => void;
 }
 
-const mapStateToProps = (state: { userReducer: UserModel }): UserModel => {
-  return state.userReducer
-}
+const mapStateToProps = (state: { userReducer: UserModel }): UserModel => state.userReducer
 
 const mapDispatchToProps = (dispatch: Dispatch): MapDispatchToProps => ({
   setUserInfor(userInfor: UserModel): void {

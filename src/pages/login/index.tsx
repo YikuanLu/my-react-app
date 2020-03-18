@@ -1,7 +1,31 @@
-import React from 'react'
+import { connect } from 'react-redux'
+import { Dispatch } from 'redux'
 
-const Login: React.FC = () => {
-  return <div>Login</div>
+import { UserModel } from '@/models/user'
+import {
+  setUserInfor,
+  //  resetUserInfor
+} from '@/store/actions/user'
+
+import LoginUi from './ui'
+
+export interface MapDispatchToProps {
+  setUserInfor: (userInfor: UserModel) => void;
+  // resetUserInfor: () => void;
 }
 
-export default Login
+const mapStateToProps = (state: { userReducer: UserModel }): UserModel => state.userReducer
+
+const mapDispatchToProps = (dispatch: Dispatch): MapDispatchToProps => ({
+  setUserInfor(userInfor: UserModel): void {
+    dispatch(setUserInfor(userInfor))
+  },
+  // resetUserInfor: (): void => {
+  //   dispatch(resetUserInfor())
+  // },
+})
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(LoginUi)

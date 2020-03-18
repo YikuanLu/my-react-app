@@ -6,15 +6,11 @@ export interface ChangeUserInforAction {
   userInfor?: UserModel;
 }
 
-export const setUserInfor = (userInfor: UserModel): ChangeUserInforAction => {
-  return {
-    type: SET_USER_INFOR,
-    userInfor,
-  }
-}
+export const setUserInfor = (userInfor: UserModel): ChangeUserInforAction => ({
+  type: SET_USER_INFOR,
+  userInfor,
+})
 
-export const resetUserInfor = (): ChangeUserInforAction => {
-  return {
-    type: RESET_USER_INFOR,
-  }
-}
+export const resetUserInfor = (): ChangeUserInforAction => ({
+  type: RESET_USER_INFOR,
+})
